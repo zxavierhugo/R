@@ -13,3 +13,11 @@ boxplot (
   ylab="Mpg"
 )
 
+densityplot( ~ mpg,
+  data=mtcars,
+  groups = cyl,
+  plot.points=F,
+  auto.key=list(columns = 3),
+  title="Cylinder")
+
+

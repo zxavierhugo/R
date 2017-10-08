@@ -24,3 +24,11 @@ summary(titanic[titanic$Survived=="Dead", ]$Age)
 summary(titanic[titanic$Survived=="Survived", ]$Age)
 
 
+boxplot(Age ~ Sex, data = titanic,
+        main="Age Distribution by Gender", 
+        col = c("red", "green"), notch = T)
+
+
+boxplot(Age ~ Survived, data = titanic,
+        main="Age Distribution by Survival", 
+        col = c("red", "green"), notch = T, ylab = "Age")
